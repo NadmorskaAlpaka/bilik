@@ -1,0 +1,109 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#landing{
+    width: 100%;
+    display: flex;
+}
+
+.landing__box{
+    display: flex;
+    width: 100%;
+}
+
+#products__featured{
+    max-width: 1397px;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.products__featured--header{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.products__featured--box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 5%;
+}
+
+.product__featured{
+    display: flex;
+    max-width: 239px;
+    max-height: 219px;
+    width: 100%;
+}
+
+#content{
+    max-width: 1320px;
+    padding: 0 20px;
+    margin-top: 110px;
+    padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 1024px){
+    .products__featured--header{
+        font-size: 38px;
+    }
+
+    #content{
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .products__featured--header{
+        font-size: 38px;
+    }
+
+    .products__featured--box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product__featured:nth-child(1),
+    .product__featured:nth-child(2){
+        margin-bottom: 5%;
+    }
+
+    .product__featured{
+        width: 45%;
+    }
+
+    #content{
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .products__featured--header{
+        font-size: 34px;
+    }
+
+    #content{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 345px){
+    .products__featured--header{
+        font-size: 30px;
+    }
+
+    #content{
+        margin-top: 50px;
+    }
+}

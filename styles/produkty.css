@@ -1,0 +1,132 @@
+#products{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products__box{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px 16px 8px;
+    max-width: 400px;
+    margin-bottom: 24px;
+    width: 100%;
+    background-color: var(--secondary-green);
+}
+
+.product:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.product__head{
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third-green);
+}
+
+.product__img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.product__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 16px;
+    height: 100%;
+}
+
+.product__name,
+.product__price{
+    color: var(--white);
+    font-size: 20px;
+    font-family: "Kadwa", serif;
+}
+
+.product__name{
+    padding: 0 10px;
+}
+
+.product__button{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Kadwa", serif;
+    font-size: 20px;
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 0 12px;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .product{
+        padding: 8px 8px 16px 8px;
+        max-width: 360px;
+    }
+
+    .product__name{
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .products__box{
+        margin: 60px 0;
+    }
+
+    .product{
+        padding: 8px 8px 16px 8px;
+        max-width: 48%;
+    }
+
+    .product__head{
+        position: relative;
+        height: auto;
+        padding-bottom: calc(410 / 348.8 * 100%);
+    }
+
+    .product__img{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .product__name,
+    .product__button{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .products__box{
+        margin: 40px 0;
+    }
+
+    .product__name{
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .product__button{
+        font-size: 16px;
+    }
+}

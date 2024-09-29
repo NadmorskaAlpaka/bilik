@@ -1,0 +1,16 @@
+#contact{
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 80px auto 0 auto;
+    padding-bottom: 60px;
+}
+
+#contact .text{
+    font-size: 20px;
+    line-height: 40px;
+    font-family: "Kadwa", serif;
+}
+
+.move-to-right{
+    margin-left: 84px;
+}

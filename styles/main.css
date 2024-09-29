@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --main-green: #334421;
+    --secondary-green: #263319;
+    --third-green: #5D711E;
+    --white: #FFFFFF;
+    --secondary-white:#FFFBFB;
+    --gold: #EB9F44;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--main-green);
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.text{
+    font-size: 16px;
+    color: var(--secondary-white);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.text:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.indent{
+    text-indent: 12px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.space-top{
+    padding-top: 20px;
+}

@@ -71,6 +71,7 @@ header{
 
     .cart__logo{
         max-height: 44px;
+        max-width: 44px;
     }
 
     .mobile_menu--icon-open{
